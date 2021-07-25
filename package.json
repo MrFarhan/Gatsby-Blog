@@ -1,13 +1,14 @@
 {
   "name": "gatsby-starter-blog",
   "private": true,
-  "description": "A starter for a blog powered by Gatsby and Markdown",
+  "description": "Simple Blog App",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "MrFarhan <muhammadfarhan012345@gmail.com>",
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/MrFarhan/Gatsby-Blog/issues"
   },
   "dependencies": {
+    "dotenv": "^10.0.0",
     "gatsby": "^3.9.1",
     "gatsby-plugin-feed": "^3.9.0",
     "gatsby-plugin-gatsby-cloud": "^2.9.1",
@@ -23,6 +24,7 @@
     "gatsby-remark-responsive-iframe": "^4.6.0",
     "gatsby-remark-smartypants": "^4.6.0",
     "gatsby-source-filesystem": "^3.9.0",
+    "gatsby-source-sanity": "^7.0.7",
     "gatsby-transformer-remark": "^4.6.0",
     "gatsby-transformer-sharp": "^3.9.0",
     "prismjs": "^1.24.1",
@@ -35,16 +37,12 @@
   "devDependencies": {
     "prettier": "2.3.2"
   },
-  "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
+  "homepage": "https://github.com/MrFarhan/Gatsby-Blog",
   "keywords": [
     "gatsby"
   ],
   "license": "0BSD",
   "main": "n/a",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
-  },
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",

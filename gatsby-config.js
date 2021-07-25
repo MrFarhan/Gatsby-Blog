@@ -1,14 +1,18 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `Simple Blog Application`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `MrFarhan`,
+      summary: `who lives and works in Pakistan building useful things.`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
+    description: `Simple Blog Application.`,
+    siteUrl: `#`,
     social: {
-      twitter: `kylemathews`,
+      github: `github.com/MrFarhan`,
     },
   },
   plugins: [
@@ -119,6 +123,12 @@ module.exports = {
         theme_color: `#663399`,
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+      },
+    },{
+      resolve: "gatsby-source-sanity",
+      options: {
+        projectId: process.env.PROJECT_ID,
+        dataset: "production",
       },
     },
     `gatsby-plugin-react-helmet`,

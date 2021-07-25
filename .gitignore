@@ -4,6 +4,14 @@ logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+package-lock.json
+studio/node_modules
+studio/sanity.json
+studio/schemas
+studio/config/.checksums
+../src/gatsby-browser.js
+*.lock
+*-lock
 
 # Runtime data
 pids
@@ -57,6 +65,10 @@ typings/
 # gatsby files
 .cache/
 public
+gatsby-config.js
+gatsby-node.js
+gatsby-node
+gatsby-config
 
 # Mac files
 .DS_Store
